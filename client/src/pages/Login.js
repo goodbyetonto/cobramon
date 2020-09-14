@@ -25,8 +25,8 @@ function Login() {
     event.preventDefault();
 
     login(email, password)
-      // navigate to the profile page
-      .then(() => history.push("/profile"))
+      // navigate to the home page
+      .then(() => history.push("/"))
       .catch((err) => {
         alert(err.response.data.message);
       });

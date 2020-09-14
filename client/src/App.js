@@ -30,7 +30,7 @@ function App() {
           <Navbar />
           <Switch>
             <ProtectedRoute exact path="/">
-              <Home />
+            <QRCodes />
             </ProtectedRoute>
             <Route exact path="/login">
               <Login />
