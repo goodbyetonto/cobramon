@@ -12,7 +12,7 @@ import Home from "./pages/Home";
 import Tables from "./pages/Tables";
 import QRCodes from "./pages/QRCodes/";
 import Reviews from "./pages/Reviews";
-import Welcome from "./pages/Welcome";
+import Welcome from "./pages/Welcome/";
 import CustomerChat from "./pages/CustomerChat";
 import CustomerReview from "./pages/CustomerReview";
 import ThankYou from "./pages/ThankYou";
@@ -57,8 +57,8 @@ function App() {
             <Route exact path="/reviews">
               <Reviews />
             </Route>
-
-            <Route path="/welcome/:company_id/:table_num">
+              {/* /:company_id/:table_num */}
+            <Route path="/welcome">
               <Welcome />
             </Route>
             <Route path="/customerchat">

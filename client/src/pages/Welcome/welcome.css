@@ -1,0 +1,8 @@
+.welcome {
+  height: calc(100vh - 65.98px);
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  row-gap: 25px;
+}
