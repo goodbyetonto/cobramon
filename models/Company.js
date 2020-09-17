@@ -52,13 +52,21 @@ const ChatSchema = new Schema(
 );
 
 const TableSchema = new Schema({
+  company_id: {
+    type: String,
+    required: true,
+  },
   table_num: {
     type: Number,
     required: true,
   },
   QR_code: String,
   isActive: Boolean,
-  chat: [ChatSchema],
+  customer_number: {
+    type: Number,
+    default: 001,
+  },
+  chat: [],
 });
 
 const ReviewSchema = new Schema({
